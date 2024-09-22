@@ -7,7 +7,7 @@ int main()
     printf("Number = %d\n", testInteger);
     return 0;
 }
-*/
+
 #include <stdio.h>
 
 int main() {
@@ -22,6 +22,29 @@ int main() {
 
     for(int i = 0; i < 10; i++) {
         printf("%d ", *(ptr + i));
+    }
+
+    return 0;
+}
+*/
+#include <iostream>
+
+int main() {
+    int age;
+
+    // Dapatkan Usia User
+    std::cout << "Enter your age: ";
+    std::cin >> age;
+
+    // Cek Umur dan Tampilkan Pesan
+    if (age < 13) {
+        std::cout << "Kamu anak-anak!" << std::endl;
+    } else if (age >= 13 && age < 20) {
+        std::cout << "Kamu remaja!" << std::endl;
+    } else if (age >= 20 && age < 60) {
+        std::cout << "Kamu dewasa!" << std::endl;
+    } else {
+        std::cout << "Kamu sudah tua!" << std::endl;
     }
 
     return 0;
